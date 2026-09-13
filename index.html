@@ -174,7 +174,8 @@
         <a class="button" href="#about">See what I’m learning</a>
       </div>
     </section>
-
+<button id="learnButton">Click me</button>
+<p id="message"></p>
     <section class="section" id="about">
       <h2>About this site</h2>
       <p class="section-intro">
@@ -211,5 +212,13 @@
   <footer>
     <p>© 2026 Fayo — Learning one step at a time.</p>
   </footer>
+  <script>
+  const button = document.getElementById("learnButton");
+  const message = document.getElementById("message");
+
+  button.addEventListener("click", function () {
+    message.textContent = "Great job! You just used JavaScript.";
+  });
+</script>
 </body>
 </html>
